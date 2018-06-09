@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>xdvpn</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+    }
+    h1 {
+      font-size: 50px;
+      font-weight: bold;
+    }
+    ul {
+      margin-left: 0px;
+      -webkit-margin-before: 0px;
+      -webkit-margin-after: 0px;
+    }
+    p {
+      margin-left: 19px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">XDVPN</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="servers.html">SERVERS</a></li>
+      <li class="active"><a href="how2.html">HOW TO</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>XDVPN HOW TO</h1>
+  <h3>Debian and related distros</h3>
+  <ul>
+    <li>Run `apt get install openvpn`</li>
+    <li>Download your xdvpn config file</li>
+    <li>Run `sudo openvpn --config /path/to/the/xdvpn/config/file.ovpn`</li>
+    <li>Connected</li>
+  </ul>
+  <h3>CentOS and related distros</h3>
+  <ul>
+    <li>Download and install the correct version of epel6 or epel7, respectivly</li>
+    <li>Run `yum update`</li>
+    <li>Run `yum install openvpn easy-rsa`</li>
+    <li>Download your xdvpn config file</li>
+    <li>Run `sudo openvpn --config /path/to/the/xdvpn/config/file.ovpn`</li>
+    <li>Connected</li>
+  </ul>
+  <h3>Windows</h3>
+  <ul>
+    <li>Download the Windows OpenVPN client from <a href="https://openvpn.net/index.php/open-source/downloads.html">here</a></li>
+    <li>Download your xdvpn config file</li>
+    <li>Move it to C:\Program Files\OpenVPN\config</li>
+    <li>Run OpenVPN as administrater from the start menu</li>
+    <li>Click the OpenVPN status bar icon, and select "Connect"</li>
+  </ul>
+</div>
+
+</body>
+</html>
